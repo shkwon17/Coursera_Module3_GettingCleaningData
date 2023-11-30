@@ -108,3 +108,6 @@ summarized_data
 # Save the summarized dataset as a CSV file
 write.csv(summarized_data, file = "summarized_data_Step5.csv", row.names = FALSE)
 
+# Save 'summarized_data' containing the tidy dataset
+write.table(summarized_data, file = "tidy_dataset.txt", row.names = FALSE)
+
