@@ -96,7 +96,7 @@ write.csv(selected_data, file = "selected_data_Step4.csv", row.names = FALSE)
 
 
 
-## Task 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+## Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 # Create a summarized tidy dataset with averages for each activity
 summarized_data <- selected_data %>%
   group_by(activity) %>%
@@ -110,6 +110,3 @@ write.csv(summarized_data, file = "summarized_data_Step5.csv", row.names = FALSE
 
 # Save 'summarized_data' containing the tidy dataset
 write.table(summarized_data, file = "tidy_dataset.txt", row.names = FALSE)
-
-#Done
-
